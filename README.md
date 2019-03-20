@@ -4,6 +4,10 @@ This project acts a boilerplate for the React layer of visualizations.
 
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It also includes:
+
+- Interaction with graphQL via [Apollo](https://www.apollographql.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
