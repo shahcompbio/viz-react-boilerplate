@@ -2,6 +2,11 @@
 
 This project acts a boilerplate for the React layer of visualizations.
 
+[React layer](https://github.com/shahcompbio/viz-react-boilerplate)
+[GraphQL layer](https://github.com/shahcompbio/viz-graphql-boilerplate)
+
+## Features
+
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 It also includes:
