@@ -14,6 +14,15 @@ It also includes:
 - Interaction with graphQL via [Apollo](https://www.apollographql.com/)
 - Production build in [Docker](https://www.docker.com/)
 
+## How to use
+
+To use the boilerplate:
+
+```
+git clone --depth=1 https://github.com/shahcompbio/viz-react-boilerplate.git <your project name>
+rm -r <your project name>/.git
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
