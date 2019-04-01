@@ -23,6 +23,10 @@ git clone --depth=1 https://github.com/shahcompbio/viz-react-boilerplate.git <yo
 rm -r <your project name>/.git
 ```
 
+Remember to change:
+
+- Project name in package.json
+
 ## Available Scripts
 
 In the project directory, you can run:
