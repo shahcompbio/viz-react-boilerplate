@@ -1,10 +1,9 @@
-import { ApolloClient } from "apollo-client";
-import { InMemoryCache } from "apollo-cache-inmemory";
-import { createHttpLink } from "apollo-link-http";
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
 
 const httpLink = process.env.REACT_APP_GRAPHQL_URL || "./graphql";
 
-const link = createHttpLink({
+// console.log(httpLink)
+const link = new HttpLink({
   uri: httpLink,
   credentials: "same-origin"
 });

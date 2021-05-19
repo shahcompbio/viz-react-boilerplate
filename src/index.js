@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import { ApolloProvider } from "react-apollo";
+import { ApolloProvider } from '@apollo/client/react'
 import client from "./apollo.js";
 
 ReactDOM.render(

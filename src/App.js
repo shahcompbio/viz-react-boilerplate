@@ -2,8 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import { graphql } from "react-apollo";
-import gql from "graphql-tag";
+
+import { gql, useQuery } from '@apollo/client'
 
 const QUERY = gql`
   query {
@@ -15,12 +15,15 @@ const QUERY = gql`
   }
 `;
 
-const App = ({ data }) => {
-  if (data && data.loading) {
+const App = () => {
+
+  const { loading, error, data } = useQuery(QUERY)
+  console.log(loading, error, data)
+  if (loading) {
     return null;
   }
 
-  if (data && data.error) {
+  if (error) {
     return null;
   }
 
@@ -46,4 +49,4 @@ const App = ({ data }) => {
   );
 };
 
-export default graphql(QUERY)(App);
+export default App;
