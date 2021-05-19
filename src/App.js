@@ -1,9 +1,9 @@
 import React from "react";
+import logo from "./logo.svg";
 import "./App.css";
 
 
 import { gql, useQuery } from '@apollo/client'
-import { StackedHorizontalBar } from '@shahlab/planetarium'
 
 const QUERY = gql`
   query {
@@ -15,17 +15,10 @@ const QUERY = gql`
   }
 `;
 
-const LABELS = ["small", "medium", "large"];
-const DATA = {
-  dog: { small: 50, medium: 25, large: 30 },
-  cat: { small: 80, medium: 20, large: 0 },
-  mouse: { small: 60, medium: 0, large: 10 },
-};
-
 const App = () => {
 
   const { loading, error, data } = useQuery(QUERY)
- 
+  console.log(loading, error, data)
   if (loading) {
     return null;
   }
@@ -39,7 +32,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <StackedHorizontalBar data={DATA} barLabels={LABELS} width={400} height={400} highlightedRow={null}/>
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
